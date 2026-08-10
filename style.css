@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    width: 100%;
+    height: 60px;
+    
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+   
+}
+.nav-links li {
+list-style: none;
+/* gap: 40px; */
+padding-left: 60px  ;
+padding-top: 10px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+
+/* home/page/decortion */
+.home-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 78%;
+}
+
