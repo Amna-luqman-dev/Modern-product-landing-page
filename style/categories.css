@@ -6,7 +6,8 @@
 }
 body{
     font-family: 'Times New Roman', Times, serif;
-      background: #F1F5F9;
+         background: linear-gradient(135deg, #f8fafc, #e0e7ff, #f5f3ff);
+
 
      
 }

@@ -27,7 +27,6 @@
   <section id="product"></section>
     <section id="categories"></section>
   <section id="contact"></section>
-
   <section id="footer"></section>
   <script>
     // JS to load external HTML components
@@ -44,6 +43,32 @@
    loadHTML("footer", "footer.html");
   </script>
 
+  <!-- <script>
+function loadHTML(id, file) {
+    fetch(file)
+        .then(response => {
+            console.log(file, response.status);
+
+            if (!response.ok) {
+                throw new Error(file + " not found!");
+            }
+
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById(id).innerHTML = data;
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+}
+
+loadHTML("home", "home.html");
+loadHTML("product", "product.html");
+loadHTML("categories", "categories.html");
+loadHTML("contact", "contact.html");
+loadHTML("footer", "footer.html");
+</script> -->
     
     
   </body>
