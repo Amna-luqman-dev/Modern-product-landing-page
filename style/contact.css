@@ -1,49 +1,113 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    min-height: 100vh;
+body{
     display: flex;
     justify-content: center;
     align-items: center;
+  background: #F1F5F9;
+    
 }
 .form{
-    
-    background-color: aquamarine;
-    padding: 30px 40px;
-    margin: 40px auto; 
+    background-color: rgb(223, 223, 227);
+    padding: 40px;
+   margin: 50px;
+    width: 300px;
     border-radius: 10px;
-    width: 30%;
-}
-label{
-    padding: 5px;
-    margin: 5px;
+    /* box-shadow: rgb(79, 76, 76); */
 
-}
-input{
-    padding: 10px;
-  
-}
-.form-name {
-    padding: 20px;
-    margin: 5px;
-
-}
-.form-button{
-display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-.form-button button{
     
-    padding: 10px;
+    width: 90%;
+    max-width: 380px;
+
+}
+h2{
+    text-align: center;
+}
+.subtitle{
+    margin: 3px;
+    padding: 4px;
+    text-align: center;
+}
+.input-group{
+    padding: 6px;
+
+}
+.input-group label{
+    font-size: 1.2rem;
+    
+}
+.input-group input{
+    margin: 4px;
+    padding: 8px;
+    width: 100%;
+    margin:2px;
     border-radius: 6px;
+    height: 40px;
+    border: none;
+
+}
+.btn{
+    padding: 10px;
+    border: none;
+     transition: 0.3s;
+    border-radius: 6px;
+    font-size: 10px;
+    display: block;
+     width :140px;
+    margin : 20px auto 0;
+}
+.btn a{
+    text-decoration: none;
     cursor: pointer;
-    background-color: blueviolet;
-    color: whitesmoke;
+    font-weight: 8px;
+}
+.btn:hover {
+    transform: translateY(2px);
+
+    box-shadow: 0 6px 15px rgba(21, 154, 130, 0.3);
+}
+
+/* Tablet */
+@media (max-width: 600px) {
+
+    .form {
+        padding: 30px 25px;
+    }
+
+    .form h2 {
+        font-size: 26px;
+    }
+}
 
 
+/* Mobile */
+@media (max-width: 400px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .form {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .form h2 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .input-group input {
+        padding: 11px;
+    }
+
+    .btn {
+        width: 130px;
+    }
 }

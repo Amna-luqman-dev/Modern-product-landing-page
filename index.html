@@ -16,13 +16,34 @@
         <!-- <img src="image.png" alt="image"> -->
       </div>
       <div class="nav-links">
-        <li><a href="home.html"> Home</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="categories.html">Categories</a></li>
-        <li><a href="contact.html"> Contact</a></li>
+        <li><a href="#home"> Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#contact"> Contact</a></li>
       </div>
     </nav>
     
+    <section id="home"></section>
+  <section id="product"></section>
+    <section id="categories"></section>
+  <section id="contact"></section>
+
+  <section id="footer"></section>
+  <script>
+    // JS to load external HTML components
+    function loadHTML(id, file) {
+      fetch(file)
+        .then(res => res.text())
+        .then(data => document.getElementById(id).innerHTML = data);
+    }
+
+    loadHTML("home", "home.html");
+    loadHTML("product", "product.html");
+    loadHTML("categories", "categories.html");
+    loadHTML("contact", "contact.html");
+   loadHTML("footer", "footer.html");
+  </script>
+
     
     
   </body>
