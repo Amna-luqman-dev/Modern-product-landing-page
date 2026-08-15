@@ -1,64 +1,325 @@
-*{
+/* =========================
+   RESET
+========================= */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.hero{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-body{
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(135deg, #f8fafc, #e0e7ff, #f5f3ff);
+
+    background: linear-gradient(
+        135deg,
+        #f8fafc,
+        #e0e7ff,
+        #f5f3ff
+    );
+
+    min-height: 100vh;
 }
-.content{
-    font-size: 1.2rem;
-    /* width: 0px; */
-    padding: 10px;
-    margin: 100px;
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 50px;
+
+    align-items: center;
+
+    padding: 80px;
 }
-.content h2{
-    font-size: 20px;
-    margin: 5px;
-     font-size: 42px;
-     width: full;
-     line-height: 1.2;
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.image-content {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 }
-.content p {
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.8;
-    color: #475569;
+
+.image-content img {
+
+    width: 100%;
+
+    max-width: 550px;
+
+    height: auto;
+
+    display: block;
+
+    cursor: pointer;
+
+    border-radius: 20px;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.image-content img:hover {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+
+    padding: 20px;
+
+    max-width: 650px;
+}
+
+.content h2 {
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    color: #1e293b;
+
     margin-bottom: 20px;
 }
-.btn{
- display: flex;
- justify-content: center;
- align-items: center;
- padding: 30px;
- cursor: pointer;
+
+.content p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #475569;
+
+    margin-bottom: 30px;
 }
-.btn button{
-    padding: 10px;
-    margin: 5px;
-    
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    align-items: center;
 }
-.btn a{
+
+.know-more {
+
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #8b5cf6
+    );
+
+    color: white;
+
     text-decoration: none;
-    color: black;
-    
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 20px rgba(99, 102, 241, 0.3);
+
+    transition: 0.3s ease;
 }
 
-.image-content{
-    margin: 150px;
 
+/* BUTTON HOVER */
+
+.know-more:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(99, 102, 241, 0.4);
 }
-.image-content img {
-    width: 100%;
-    display: block;
-    transition: transform 0.4s ease;
-    cursor: pointer;
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 100px 50px 50px;
+
+        text-align: center;
+    }
+
+    .image-content {
+
+        order: 1;
+    }
+
+    .content {
+
+        order: 2;
+
+        max-width: 700px;
+
+        margin: auto;
+
+        padding: 10px;
+    }
+
+    .image-content img {
+
+        width: 75%;
+
+        max-width: 500px;
+    }
+
+    .content h2 {
+
+        font-size: 36px;
+    }
+
+    .content p {
+
+        font-size: 17px;
+    }
+
+    .btn {
+
+        justify-content: center;
+    }
 }
-.image-content img:hover {
-    transform: scale(1.1);
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 80px 20px 40px;
+    }
+
+    .image-content img {
+
+        width: 95%;
+
+        max-width: 400px;
+    }
+
+    .content {
+
+        padding: 5px;
+    }
+
+    .content h2 {
+
+        font-size: 30px;
+
+        line-height: 1.25;
+
+        margin-bottom: 15px;
+    }
+
+    .content p {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        margin-bottom: 25px;
+    }
+
+    .know-more {
+
+        padding: 12px 24px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .hero {
+
+        padding: 70px 15px 30px;
+    }
+
+    .image-content img {
+
+        width: 100%;
+    }
+
+    .content h2 {
+
+        font-size: 26px;
+    }
+
+    .content p {
+
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+    .know-more {
+
+        padding: 11px 20px;
+
+        font-size: 13px;
+    }
 }

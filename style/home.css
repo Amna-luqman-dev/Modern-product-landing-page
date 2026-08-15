@@ -6,120 +6,289 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(135deg, #f8fafc, #e0e7ff, #f5f3ff);
-    min-height: 100vh;
 }
 
-/* Main Home Section */
+
+/* =========================
+   HOME SECTION
+========================= */
+
 .home-page {
-    min-height: 90vh;
+
+    min-height: 100vh;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+
+    gap: 50px;
+
     align-items: center;
-    padding: 60px 80px;
+
+    padding: 100px 80px;
+
+    background: linear-gradient(
+        135deg,
+        #f8fafc,
+        #e0e7ff,
+        #f5f3ff
+    );
 }
 
-/* Text Section */
+
+/* =========================
+   TEXT SECTION
+========================= */
+
 .home-text {
-    padding: 40px;
+    padding: 30px;
 }
 
 .heading h2 {
+
     font-size: 42px;
+
     line-height: 1.2;
+
     color: #1e293b;
+
     margin-bottom: 20px;
 }
 
 .home-text p {
-    padding: 0;
+
     font-size: 18px;
+
     line-height: 1.8;
+
     color: #475569;
+
     margin-bottom: 30px;
+
+    max-width: 650px;
 }
 
-/* Button */
+
+/* =========================
+   BUTTON
+========================= */
+
 .btn {
     display: flex;
+
     justify-content: flex-start;
+
     align-items: center;
 }
 
-.btn button {
+.order-btn {
+
+    display: inline-block;
+
     padding: 13px 28px;
-    border: none;
+
     border-radius: 30px;
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
-    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #8b5cf6
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 20px rgba(99, 102, 241, 0.3);
+
     transition: 0.3s ease;
 }
 
-.btn button:hover {
+.order-btn:hover {
+
     transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(99, 102, 241, 0.4);
+
+    box-shadow:
+        0 12px 25px rgba(99, 102, 241, 0.4);
 }
 
-.btn button a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
 
-/* Image Section */
+/* =========================
+   IMAGE
+========================= */
+
 .home-image {
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 }
 
 .home-image img {
+
     width: 85%;
+
     max-width: 520px;
+
+    height: auto;
+
     border-radius: 25px;
+
     padding: 12px;
+
     background: rgba(255, 255, 255, 0.7);
-    box-shadow: 
+
+    box-shadow:
         0 20px 40px rgba(15, 23, 42, 0.15),
         0 5px 15px rgba(99, 102, 241, 0.15);
+
     transition: 0.4s ease;
 }
 
-/* Image Hover Effect */
+
+/* IMAGE HOVER */
+
 .home-image img:hover {
+
     transform: scale(1.04);
-    box-shadow: 
+
+    box-shadow:
         0 25px 50px rgba(15, 23, 42, 0.2);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
 
     .home-page {
+
         grid-template-columns: 1fr;
-        padding: 40px 25px;
+
+        gap: 30px;
+
+        padding: 100px 40px 50px;
+
         text-align: center;
     }
 
     .home-text {
+
         padding: 20px;
     }
 
     .heading h2 {
-        font-size: 32px;
+
+        font-size: 36px;
     }
 
     .home-text p {
-        font-size: 16px;
+
+        font-size: 17px;
+
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .btn {
+
         justify-content: center;
     }
 
     .home-image img {
+
+        width: 70%;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .home-page {
+
+        min-height: 100vh;
+
+        padding: 90px 20px 40px;
+
+        gap: 20px;
+    }
+
+    .home-text {
+
+        padding: 10px;
+    }
+
+    .heading h2 {
+
+        font-size: 30px;
+
+        line-height: 1.25;
+    }
+
+    .home-text p {
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        margin-bottom: 25px;
+    }
+
+    .order-btn {
+
+        padding: 12px 24px;
+
+        font-size: 14px;
+    }
+
+    .home-image img {
+
         width: 90%;
+
+        max-width: 400px;
+
+        padding: 8px;
+
+        border-radius: 18px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .home-page {
+
+        padding: 90px 15px 30px;
+    }
+
+    .heading h2 {
+
+        font-size: 26px;
+    }
+
+    .home-text p {
+
+        font-size: 14px;
+    }
+
+    .home-image img {
+
+        width: 100%;
     }
 }

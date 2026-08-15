@@ -1,36 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Us</title>
+
     <link rel="stylesheet" href="./style/contact.css">
+
 </head>
 
 <body>
 
-    <form action="" class="form">
+    <form action="#" class="form">
 
         <h2>Contact Us</h2>
-        <p class="subtitle">Please fill in the details below</p>
+
+        <p class="subtitle">
+            Please fill in the details below
+        </p>
+
+
+        <!-- Name -->
 
         <div class="input-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="name">
+                Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
         </div>
+
+
+        <!-- Email -->
 
         <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
         </div>
+
+
+        <!-- Password -->
 
         <div class="input-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <label for="password">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+
         </div>
 
-        <button class="btn" type="submit">
-             <a href="#">Order Now</a>
+
+        <!-- Submit -->
+
+        <button
+            class="btn"
+            type="submit"
+        >
+            Order Now
         </button>
 
     </form>

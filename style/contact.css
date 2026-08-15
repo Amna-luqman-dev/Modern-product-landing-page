@@ -1,113 +1,293 @@
+/* =========================
+   RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  background: #F1F5F9;
-    
-}
-.form{
-    background-color: rgb(223, 223, 227);
-    padding: 40px;
-   margin: 50px;
-    width: 300px;
-    border-radius: 10px;
-    /* box-shadow: rgb(79, 76, 76); */
 
-    
-    width: 90%;
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+
+    background: #F1F5F9;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+
+    width: 100%;
+
     max-width: 380px;
 
-}
-h2{
-    text-align: center;
-}
-.subtitle{
-    margin: 3px;
-    padding: 4px;
-    text-align: center;
-}
-.input-group{
-    padding: 6px;
+    padding: 40px;
 
-}
-.input-group label{
-    font-size: 1.2rem;
-    
-}
-.input-group input{
-    margin: 4px;
-    padding: 8px;
-    width: 100%;
-    margin:2px;
-    border-radius: 6px;
-    height: 40px;
-    border: none;
+    background-color: #dfdfe3;
 
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
 }
-.btn{
-    padding: 10px;
-    border: none;
-     transition: 0.3s;
-    border-radius: 6px;
-    font-size: 10px;
+
+
+/* =========================
+   HEADING
+========================= */
+
+.form h2 {
+
+    text-align: center;
+
+    font-size: 30px;
+
+    color: #1e293b;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle {
+
+    text-align: center;
+
+    font-size: 14px;
+
+    color: #64748b;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+.input-group {
+
+    margin-bottom: 18px;
+}
+
+
+/* LABEL */
+
+.input-group label {
+
     display: block;
-     width :140px;
-    margin : 20px auto 0;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #334155;
+
+    margin-bottom: 7px;
 }
-.btn a{
-    text-decoration: none;
+
+
+/* INPUT */
+
+.input-group input {
+
+    width: 100%;
+
+    height: 42px;
+
+    padding: 10px 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    background-color: white;
+
+    transition: 0.3s ease;
+}
+
+
+/* INPUT FOCUS */
+
+.input-group input:focus {
+
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+
+    display: block;
+
+    width: 140px;
+
+    margin: 25px auto 0;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #8b5cf6
+    );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
     cursor: pointer;
-    font-weight: 8px;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+        0 6px 15px rgba(99, 102, 241, 0.3);
 }
+
+
+/* BUTTON HOVER */
+
 .btn:hover {
-    transform: translateY(2px);
 
-    box-shadow: 0 6px 15px rgba(21, 154, 130, 0.3);
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 20px rgba(99, 102, 241, 0.4);
 }
 
-/* Tablet */
+
+/* BUTTON ACTIVE */
+
+.btn:active {
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
 @media (max-width: 600px) {
 
+    body {
+
+        padding: 20px;
+    }
+
     .form {
-        padding: 30px 25px;
+
+        max-width: 420px;
+
+        padding: 32px 25px;
     }
 
     .form h2 {
-        font-size: 26px;
+
+        font-size: 27px;
+    }
+
+    .subtitle {
+
+        font-size: 13px;
     }
 }
 
 
-/* Mobile */
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 400px) {
 
     body {
+
         padding: 15px;
     }
 
     .form {
+
         width: 100%;
-        padding: 25px 20px;
+
+        padding: 25px 18px;
+
+        border-radius: 10px;
     }
 
     .form h2 {
+
         font-size: 24px;
     }
 
     .subtitle {
-        font-size: 13px;
+
+        font-size: 12px;
+
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+
+        margin-bottom: 15px;
+    }
+
+    .input-group label {
+
+        font-size: 14px;
     }
 
     .input-group input {
-        padding: 11px;
+
+        height: 40px;
+
+        font-size: 13px;
     }
 
     .btn {
+
         width: 130px;
+
+        padding: 11px 15px;
+
+        font-size: 14px;
     }
 }
