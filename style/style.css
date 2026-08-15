@@ -90,12 +90,32 @@ body {
 /* ================= SECTIONS ================= */
 
 section {
+    width: 100%;
     scroll-margin-top: 70px;
 }
 
 #home {
     min-height: 100vh;
     padding-top: 70px;
+}
+
+#product {
+    min-height: 100vh;
+    padding: 80px 20px;
+}
+
+#categories {
+    min-height: 100vh;
+    padding: 80px 20px;
+}
+
+#contact {
+    min-height: 100vh;
+    padding: 80px 20px;
+}
+
+#footer {
+    width: 100%;
 }
 
 

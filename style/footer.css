@@ -1,171 +1,101 @@
-/* =================================
+/* 
    FOOTER
-================================= */
-
+*/
 .footer {
-
     width: 100%;
-
     background-color: #1E293B;
-
     color: white;
-
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 
-/* =================================
-   FOOTER CONTAINER
-================================= */
+/* footer-container */
 
 .footer-container {
-
     width: 100%;
-
     max-width: 1100px;
-
     margin: auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
-    /* gap: 40px; */
-
+    gap: 40px;
     padding-bottom: 40px;
 }
-
-
-/* =================================
-   FOOTER BOX
-================================= */
+/* footer-box */
 
 .footer-box h2 {
-
     font-size: 25px;
-
     margin-bottom: 15px;
 }
-
 
 .footer-box h3 {
-
     font-size: 18px;
-
     margin-bottom: 15px;
 }
 
-
 .footer-box p {
-
     color: #CBD5E1;
-
     line-height: 1.7;
-
     font-size: 14px;
 }
 
-
-/* =================================
-   QUICK LINKS
-================================= */
+/* quick link */
 
 .footer-box ul {
-
     list-style: none;
 }
-
-
 .footer-box ul li {
-
     margin-bottom: 10px;
 }
 
-
 .footer-box ul li a {
-
     color: #CBD5E1;
-
     text-decoration: none;
-
     transition: 0.3s;
 }
-
-
 .footer-box ul li a:hover {
-
     color: #38BDF8;
-
     padding-left: 5px;
 }
-
-
-/* =================================
+/* 
    SOCIAL LINKS
-================================= */
-
+ */
 .social-links {
-
     display: flex;
-
     flex-direction: column;
-
     gap: 12px;
 }
 
 
 .social-links a {
-
     color: #CBD5E1;
-
     text-decoration: none;
-
     transition: 0.3s;
 }
 
-
 .social-links a:hover {
-
     color: #38BDF8;
 }
 
 
-/* =================================
-   FOOTER BOTTOM
-================================= */
+/* footer-bottom */
 
 .footer-bottom {
-
     border-top: 1px solid #334155;
-
     text-align: center;
-
     padding: 20px;
-
     color: #94A3B8;
-
     font-size: 14px;
 }
 
-
-/* =================================
-   TABLET
-================================= */
-
+/* /tablet */
 @media (max-width: 1000px) {
-
     .footer-container {
-
         grid-template-columns: repeat(2, 1fr);
-
         gap: 30px;
     }
 }
 
-
-/* =================================
-   MOBILE
-================================= */
+/* mobile */
 
 @media (max-width: 600px) {
 
@@ -175,23 +105,15 @@
     }
 
     .footer-container {
-
         width: 90%;
-
         grid-template-columns: 1fr;
-
         text-align: center;
-
         gap: 30px;
-
         padding-bottom: 30px;
     }
-
     .social-links {
-
         align-items: center;
     }
-
     .footer-box h2 {
 
         font-size: 22px;
@@ -204,16 +126,12 @@
 }
 
 
-/* =================================
-   SMALL MOBILE
-================================= */
+/* small mobile */
 
 @media (max-width: 400px) {
 
     .footer-bottom {
-
         padding: 15px 10px;
-
         font-size: 12px;
     }
 }

@@ -14,7 +14,7 @@
               SMART <span>SHOP</span>
           </h1>
 
-          <img src="image.png" alt="Smart Shop Logo">
+   
       </div>
 
       <ul class="nav-links">
@@ -33,51 +33,12 @@
   <section id="footer"></section>
 
   <script>
-    // JS to load external HTML components
-    function loadHTML(id, file) {
-    fetch(file)
-        .then(res => res.text())
-        .then(data => document.getElementById(id).innerHTML = data);
-}
-
-    function loadHTML(id, file) {
-
-    fetch(file)
-        .then(response => {
-
-            if (!response.ok) {
-                throw new Error(file + " not found!");
-            }
-
-            return response.text();
-        })
-
-        .then(data => {
-            document.getElementById(id).innerHTML = data;
-        })
-
-        .catch(error => {
-            console.error("Error:", error);
-        });
-}
-
-loadHTML("home", "home.html");
-loadHTML("product", "product.html");
-loadHTML("categories", "categories.html");
-// loadHTML("contact", "contact.html");
-loadHTML("footer", "footer.html");
-  </script>
-
-  <!-- <script>
 function loadHTML(id, file) {
     fetch(file)
         .then(response => {
-            console.log(file, response.status);
-
             if (!response.ok) {
                 throw new Error(file + " not found!");
             }
-
             return response.text();
         })
         .then(data => {
@@ -93,8 +54,7 @@ loadHTML("product", "product.html");
 loadHTML("categories", "categories.html");
 loadHTML("contact", "contact.html");
 loadHTML("footer", "footer.html");
-</script> -->
-    
-    
+</script>
+ 
   </body>
 </html>
